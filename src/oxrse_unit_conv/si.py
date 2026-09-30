@@ -20,6 +20,9 @@ m3 = meter_cu
 kilogram = classes.SIUnit("kilogram", "kg")
 kg = kilogram
 
+gram = classes.SIUnit("gram", "g")
+g = gram
+
 ampere = classes.SIUnit("ampere", "A")
 A = ampere
 

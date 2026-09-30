@@ -1,6 +1,6 @@
 # Click interface to allow running from command line
-import units
-import meta.classes
+from . import units
+from .meta import classes
 import click
 import logging
 
@@ -25,7 +25,7 @@ def click_convert(number, unit, to):
     click.echo(convert(number, unit, to))
 
 
-def convert(number: meta.classes.Number, unit: str, to: str):
+def convert(number: classes.Number, unit: str, to: str):
     logging.debug(f"Call: {number}: {unit} -> {to}")
 
     my_unit: units.Unit = getattr(units, unit)

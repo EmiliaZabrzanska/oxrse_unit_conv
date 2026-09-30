@@ -1,5 +1,5 @@
-from si import *
-from meta.classes import Unit
+from .si import *
+from .meta.classes import Unit
 
 # second
 minute = Unit(name='minute', abbr='min', si=second, to_si_fun=lambda n: n * 60)
@@ -18,7 +18,9 @@ mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.34
 
 # meter_cu
 
-# kilogram
+# gram
+gram = Unit(name='gram', abbr='g', si=kilogram, to_si_fun=lambda n: n * 0.001)
+g = gram
 
 pound = Unit(name='pound', abbr='lb', si=kilogram, to_si_fun=lambda n: n * 0.4535924)
 lb = pound
